@@ -1,3 +1,4 @@
+// vim: syntax=pine 
 const predef = require("./tools/predef");
 const meta = require("./tools/meta");
 const { ParamType } = meta;
@@ -66,8 +67,7 @@ class PATS {
         };
         
         let candlestick;
-        if (upbar) {
-            candlestick = { color: this.props.buyColor };
+        if (upbar) { candlestick = { color: this.props.buyColor };
         } else if (downbar) {
             candlestick = { color: this.props.sellColor };
         } else if (insidebar) {
